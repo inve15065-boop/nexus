@@ -1,0 +1,12 @@
+scikit-learn
+numpy
+joblib
+flask
+flask-cors
+firebase-admin
+python-dotenv
+reportlab
+pandas
+openpyxl
+pyjwt
+werkzeug

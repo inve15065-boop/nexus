@@ -1,0 +1,99 @@
+{
+    "courses": [
+        {
+            "id": "1",
+            "name": "Flutter Mastery",
+            "instructor": "Dr. Nexus",
+            "instructor_email": "staff@nexus.one",
+            "students": 120,
+            "status": "Active"
+        },
+        {
+            "id": "2",
+            "name": "Advanced Python",
+            "instructor": "Sarah Smith",
+            "instructor_email": "staff@nexus.one",
+            "students": 85,
+            "status": "Active"
+        },
+        {
+            "id": "3",
+            "name": "AI & ML Ethics",
+            "instructor": "Dr. Nexus",
+            "instructor_email": "admin@nexus.one",
+            "students": 45,
+            "status": "Active"
+        }
+    ],
+    "users": [
+        {
+            "uid": "dev_admin",
+            "email": "admin@nexus.one",
+            "password": "scrypt:32768:8:1$pn9Dkhcey9iyLaTN$41919b0fbd1f4e03887bf780529325f3f46a9ac94a623809a5d1d19d31a343cb18f12ee61a4385d7029369cd6121cb0801f7e825d3b16f03824b2bfbb8916917",
+            "role": "admin"
+        },
+        {
+            "uid": "dev_staff",
+            "email": "staff@nexus.one",
+            "password": "scrypt:32768:8:1$4kGssb9EXomGoPzp$d9580be4a2495b885fb273c422265ce97a233642fe85859429d80cadc59bc78d62bf29decc26f3a5e076deaef86dd9e4bc4a9b303b96c45e348a56225de5bfc1",
+            "role": "staff"
+        },
+        {
+            "uid": "dev_student",
+            "email": "student@nexus.one",
+            "password": "scrypt:32768:8:1$WK2yoJQFCsH6hwkr$6493df3a09953c8451f99795e02071de0ef2ccc80828fc54782142dab724e12c4c8de307b293cb1fc5d2d4cef4908942132996c367340f5042b79e5041637b63",
+            "role": "user"
+        },
+        {
+            "uid": "gOptjZGSM9g7xNxIK5p9joJEaC83",
+            "email": "stude@nexus.one",
+            "role": "user",
+            "password": "scrypt:32768:8:1$iOZofyrLac3eX4LO$c9104d9b11eb5c0af06ea7ae50acdd06c8ea3a1a70e92280cdbfc17ca4d41e474e51aa8156caae6e3dd7465a069e0e97a5b819db4b95179e858484490a3c887e"
+        },
+        {
+            "uid": "Uvj3LPV0eLQmiIKLaa8v2pdxfD92",
+            "email": "stuf@nexus.one",
+            "role": "staff",
+            "password": "scrypt:32768:8:1$jcSEaLLAtogdyQaS$3869c6e20a9798dcae7920bc6a15212426495241334635379ad2ae660a3abd7b7e56d89eb29b209c541dff4e0d2524b604ebf57486e5334fc76d1aafa37e80f3"
+        },
+        {
+            "uid": "RJqtXsyMP6dEySvqaxtzwPnzhP02",
+            "email": "ad@nexus.one",
+            "role": "user",
+            "password": "scrypt:32768:8:1$mr92maf7lS3z0LjF$68beb588cbcf7cc3b7f94bd0118457076bdb6a4510b55f5957c653c645bec1da748a906c64ffbd8d8f7a4c2ad3cbd03e41b0c642a7fabded26ed4339753905af"
+        }
+    ],
+    "enrollments": [
+        {
+            "student_id": "dev_student",
+            "student_name": "Student One",
+            "course_id": "1",
+            "grade": "A",
+            "progress": 95
+        },
+        {
+            "student_id": "dev_student",
+            "student_name": "Student One",
+            "course_id": "2",
+            "grade": "B+",
+            "progress": 82
+        }
+    ],
+    "assignments": [
+        {
+            "id": "a1",
+            "course_id": "1",
+            "title": "Build a Weather App",
+            "due": "2026-06-01",
+            "status": "Pending"
+        },
+        {
+            "id": "a2",
+            "course_id": "2",
+            "title": "Data Analysis with Pandas",
+            "due": "2026-06-05",
+            "status": "Submitted"
+        }
+    ],
+    "logs": []
+}

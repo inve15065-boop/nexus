@@ -1,0 +1,12 @@
+backend/serviceAccountKey.json
+*.json
+.firebase/
+firebase-debug.log
+.firebaserc
+local_db.json
+__pycache__/
+*.pyc
+nexus_ai_model.joblib
+node_modules/
+backend/serviceAccountKey.json
+*.json

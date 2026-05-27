@@ -1,0 +1,75 @@
+{
+    "courses": [
+        {
+            "id": "1",
+            "name": "Flutter Mastery",
+            "instructor": "Dr. Nexus",
+            "students": 120,
+            "status": "Active"
+        },
+        {
+            "id": "2",
+            "name": "Advanced Python",
+            "instructor": "Sarah Smith",
+            "students": 85,
+            "status": "Active"
+        }
+    ],
+    "users": [
+        {
+            "uid": "dev_admin",
+            "email": "admin@nexus.one",
+            "password": "scrypt:32768:8:1$VnaHR5cyq5jgaZU7$6e5c32fae21f6daefef8264c8bae5dada0ead7f2505941878f669e1350db3f13a5e5fc113dba27810baf18adbc8e857911453c3df72c4e4a1230108221b50e74",
+            "role": "admin"
+        },
+        {
+            "uid": "staff_1",
+            "email": "staff@nexus.one",
+            "password": "scrypt:32768:8:1$0EcKMCDTPB9nNKXA$676f94fa0488aefce0d54b7a8c1e2a9c4ba61424f92ff54a9d5b23bf49dcbc68fe686c97aef800094fd22519f56d0258a44c5042e0f39436ef27614766264e66",
+            "role": "staff"
+        }
+    ],
+    "logs": [
+        {
+            "action": "SYSTEM_INIT",
+            "details": "Nexus One Advanced System initialized",
+            "timestamp": "2026-05-27T09:48:52.029097"
+        },
+        {
+            "user_id": "dev_admin",
+            "action": "USER_LOGIN",
+            "details": "User logged in: admin@nexus.one",
+            "timestamp": "2026-05-27T09:48:53.501339"
+        },
+        {
+            "user_id": "dev_admin",
+            "action": "USER_LOGIN",
+            "details": "User logged in: admin@nexus.one",
+            "timestamp": "2026-05-27T09:50:01.223939"
+        },
+        {
+            "user_id": "dev_admin",
+            "action": "USER_LOGIN",
+            "details": "User logged in: admin@nexus.one",
+            "timestamp": "2026-05-27T09:50:02.204706"
+        },
+        {
+            "user_id": "dev_admin",
+            "action": "USER_LOGIN",
+            "details": "User logged in: admin@nexus.one",
+            "timestamp": "2026-05-27T09:50:02.934947"
+        },
+        {
+            "user_id": "dev_admin",
+            "action": "USER_LOGIN",
+            "details": "User logged in: admin@nexus.one",
+            "timestamp": "2026-05-27T09:50:03.670728"
+        },
+        {
+            "user_id": "dev_admin",
+            "action": "USER_LOGIN",
+            "details": "User logged in: admin@nexus.one",
+            "timestamp": "2026-05-27T11:36:01.109475"
+        }
+    ]
+}
