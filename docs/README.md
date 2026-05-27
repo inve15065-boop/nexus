@@ -1,4 +1,23 @@
 # NEXUS ONE — Smart Digital Management System
+
+## 🚀 Deployment Guide
+
+### 1. Backend (Cloud Run / Render)
+- The backend is dockerized.
+- **Render**: Connect your GitHub repo, set the root directory to `backend`, and use `gunicorn app:app` as the start command.
+- **Environment Variables**:
+    - `SECRET_KEY`: Your JWT secret.
+    - `FIREBASE_CONFIG_JSON`: Paste the entire content of your `serviceAccountKey.json` here to enable cloud database sync.
+
+### 2. Frontend (Firebase Hosting)
+- Already configured! Just run `firebase deploy --only hosting`.
+- Live at: [https://aion-edu-ai3.web.app](https://aion-edu-ai3.web.app)
+
+### 3. Mobile (Android APK)
+- Navigate to `mobile/`
+- Run `flutter build apk --release`
+- The APK will be in `build/app/outputs/flutter-apk/app-release.apk`
+
 > "One Platform. Total Control. Future-Ready."
 
 ## 🚀 Overview

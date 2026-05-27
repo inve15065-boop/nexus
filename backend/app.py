@@ -81,13 +81,22 @@ def save_local_db(data):
 # Initialize Firebase Admin
 db = None
 try:
-    if os.path.exists("serviceAccountKey.json"):
+    # 1. Try Loading from Environment Variable (Professional Cloud Method)
+    firebase_config = os.environ.get('FIREBASE_CONFIG_JSON')
+    if firebase_config:
+        config_dict = json.loads(firebase_config)
+        cred = credentials.Certificate(config_dict)
+        firebase_admin.initialize_app(cred)
+        db = firestore.client()
+        print("Firebase initialized via Environment Variable.")
+    # 2. Fallback to local file (Local Development)
+    elif os.path.exists("serviceAccountKey.json"):
         cred = credentials.Certificate("serviceAccountKey.json")
         firebase_admin.initialize_app(cred)
         db = firestore.client()
-        print("Firebase successfully initialized.")
+        print("Firebase initialized via local serviceAccountKey.json.")
     else:
-        print("Warning: serviceAccountKey.json not found. Using local JSON DB.")
+        print("Warning: No Firebase credentials found. Using local JSON DB.")
 except Exception as e:
     print(f"Firebase Init Error: {e}. Falling back to local JSON DB.")
 

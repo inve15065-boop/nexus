@@ -10,3 +10,4 @@ pandas
 openpyxl
 pyjwt
 werkzeug
+gunicorn
